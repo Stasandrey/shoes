@@ -16,9 +16,13 @@ def generateSticker( model, size, gtin, serial, dmC ):
     img = Image( filename = "./maket.png" ).clone()
     draw = Drawing()
     draw.composite( operator = "over", left = 600, top = 70, width = dmCode.width,  height = dmCode.height, image = dmCode )
+    
+    w = round( len( model ) * 65 / 2 ) 
+    
+    print( w )
     draw.font_size = 110
-    draw.text( 100, 240, model )
-    draw.text( 240, 420, size )
+    draw.text( 320 - w, 240, model )
+    draw.text( 250, 420, size )
     draw.font_size = 70
     draw.text( 50, 750, gtin[4 : 18] )
     draw.font_size = 50

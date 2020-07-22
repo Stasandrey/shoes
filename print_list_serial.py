@@ -37,4 +37,4 @@ gtin = readGtin( name )
 codes = readCodes( name )
 for item in codes:
     
-    print( "%s %s %s %s"%( gtin[ item[0] ][0], gtin[ item[0] ][1], item[0], dif_func.decodeSerial( item[1] ))  )
+    print( "%s %s %s (01)%s(21)%s"%( gtin[ item[0] ][0], gtin[ item[0] ][1], item[0], item[0], dif_func.decodeSerial( item[1] ))  )

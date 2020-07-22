@@ -34,7 +34,7 @@ def addGtin( name, gtin, model, size ):
     con.close()
 
 def isGtinExist( name, gtin ):
-    res = False;
+    res = False
     con = sqlite3.connect( name ) 
     cur = con.cursor()
     cur.execute( "SELECT DISTINCT GTIN FROM GTIN WHERE GTIN='%s';"%(

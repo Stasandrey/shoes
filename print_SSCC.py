@@ -13,7 +13,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Print_SSCC(object):
     def setupUi(self, Print_SSCC):
         Print_SSCC.setObjectName("Print_SSCC")
-        Print_SSCC.resize(331, 262)
+        Print_SSCC.resize(330, 262)
         self.verticalLayoutWidget = QtWidgets.QWidget(Print_SSCC)
         self.verticalLayoutWidget.setGeometry(QtCore.QRect(10, 10, 311, 241))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")

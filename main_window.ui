@@ -24,16 +24,6 @@
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>Мы работаем с </string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QListView" name="lstCompany"/>
-    </item>
-    <item>
      <widget class="QPushButton" name="btnOrders">
       <property name="text">
        <string>Обработка заказов</string>

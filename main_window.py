@@ -20,12 +20,6 @@ class Ui_Main_Window(object):
         self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.label = QtWidgets.QLabel(self.verticalLayoutWidget)
-        self.label.setObjectName("label")
-        self.verticalLayout.addWidget(self.label)
-        self.lstCompany = QtWidgets.QListView(self.verticalLayoutWidget)
-        self.lstCompany.setObjectName("lstCompany")
-        self.verticalLayout.addWidget(self.lstCompany)
         self.btnOrders = QtWidgets.QPushButton(self.verticalLayoutWidget)
         self.btnOrders.setObjectName("btnOrders")
         self.verticalLayout.addWidget(self.btnOrders)
@@ -54,7 +48,6 @@ class Ui_Main_Window(object):
     def retranslateUi(self, Main_Window):
         _translate = QtCore.QCoreApplication.translate
         Main_Window.setWindowTitle(_translate("Main_Window", "Маркировка кодами ЧЕСТНЫЙ ЗНАК"))
-        self.label.setText(_translate("Main_Window", "Мы работаем с "))
         self.btnOrders.setText(_translate("Main_Window", "Обработка заказов"))
         self.btnPrintDatamatrix.setText(_translate("Main_Window", "Печать этикеток с кодами DataMatrix"))
         self.btnPrintSSCC.setText(_translate("Main_Window", "Печать штрихкодов для коробов"))
